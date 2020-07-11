@@ -283,24 +283,20 @@ margin-bottom: 5rem;
 
 /*Contact*/
 #contact{
-  height:25rem;
+  /* height:25rem; */
   color: #12cad6;
   background-color:#cff6cf;
-  padding:0 10%;
-
-}
-#contact h1{
+  padding:3% 20%;
   text-align: center;
-  padding: 1rem 5rem;
+}
+#contact h2{
+  text-align: center;
+  /* padding-top: 1rem; */
   margin-bottom: 0;
-  color: #888888;
+  color: #12cad6;
   font-family: 'Libre Baskerville', serif;
 }
-.contactHr{
-  margin: 0;
-  border: 2px solid #e4e3e3;
-  border-radius: 20px;
-}
+
 .fa {
   padding: 15px;
   font-size: 30px;
@@ -328,14 +324,8 @@ margin-bottom: 5rem;
   font-size: 3rem;
   font-family: 'Indie Flower', cursive;
 }
-.contactInfo{
-  border-left: 2px solid #e4e3e3;
-  height:18rem;
-  text-align: left;
-  padding-top: 2%;
-}
-.lower{
-  padding-left: 15rem;
+.info{
+  color: #888888;
 }
 /*Footer*/
 #footer{
