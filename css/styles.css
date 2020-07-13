@@ -203,7 +203,7 @@ hr.aboutHr{
 
 
 @media only screen and (max-device-width: 1600px) {
-  .homeImg, .bgimg-2, .bgimg-3 {
+  .homeImg, .firstParallax, .secondParallax, .thirdParallax{
     background-attachment: scroll;
     min-height: 400px;
   }
