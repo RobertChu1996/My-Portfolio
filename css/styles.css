@@ -1,336 +1,210 @@
-/* Title */
-#title {
-   overflow: auto;
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+  }
+/* Home */
+  .homeImg, .firstParallax, .secondParallax,.thirdParallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.homeImg{
+background-image: url("../images/home.jpeg");
+min-height: 100%;
+height:100vh;
+}
+.firstParallax{
+  background-image: url("../images/firstPara.jpeg");
+  min-height: 400px;
+}
+.secondParallax{
+  background-image: url("../images/secondPara.jpeg");
+  min-height: 400px;
 }
 
-#title h1{
-  font-family: 'Libre Baskerville', serif;
-}
-.scrolling {
- height: 50px;
- overflow: hidden;
- position: relative;
- width:20rem;
- margin-left: 38%;
-}
-.scrolling h2 {
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- /* Starting position */
- -moz-transform:translateX(100%);
- -webkit-transform:translateX(100%);
- transform:translateX(100%);
- /* Apply animation to this element */
- -moz-animation: scrolling 15s linear infinite;
- -webkit-animation: scrolling 15s linear infinite;
- animation: scrolling 15s linear infinite;
-}
-/* Move it (define the animation) */
-@-moz-keyframes scrolling {
- 0%   { -moz-transform: translateX(100%); }
- 100% { -moz-transform: translateX(-100%); }
-}
-@-webkit-keyframes scrolling {
- 0%   { -webkit-transform: translateX(100%); }
- 100% { -webkit-transform: translateX(-100%); }
-}
-@keyframes scrolling {
- 0%   {
- -moz-transform: translateX(100%); /* Firefox bug fix */
- -webkit-transform: translateX(100%); /* Firefox bug fix */
- transform: translateX(100%);
- }
- 100% {
- -moz-transform: translateX(-100%); /* Firefox bug fix */
- -webkit-transform: translateX(-100%); /* Firefox bug fix */
- transform: translateX(-100%);
- }
+.thirdParallax{
+  background-image: url("../images/thirdPara.jpeg");
+  min-height: 400px;
 }
 
-#title h2{
-  font-family: 'Ubuntu', sans-serif;
+.w3-wide {letter-spacing: 10px;}
+/* About ME */
+.Info{
+  margin-top: 10%;
 }
-.container-fluid {
-  background-image: url("../images/Title-background.jpeg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  height: 100vh;
-  color: #fff;
-  text-align: center;
-  padding: 3% 15% 7%;
-
+.myPic{
+  border-radius: 15%;
+  height:30rem;
+  width:auto;
 }
-
-/* Navbar */
-#navBar{
-  padding:0;
+hr.aboutHr{
+    border: 2px solid grey;
+    border-radius: 5px;
 }
-.navbar {
-  background-color: #cff6cf;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom:4%;
+.hobbyList{
+  
+  list-style: none;
+  text-align: left;
+}
+.hobbyList li{
+  margin-bottom: 1%;
 }
 
-.navbar-brand {
-  font-family: 'Indie Flower', cursive;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: black;
 
-}
-
-.nav-item {
-  padding: 0 18px;
-}
-
-.nav-link {
-  font-size: 1.2rem;
-  font-family: 'Montserrat Alternates', sans-serif;
-  color: black;
-}
-
-.titleName {
-  padding-top: 20rem;
-}
-
-/* About Me */
-#aboutMe {
-padding: 0 5rem 10%;
-margin: 0 5rem;
-}
-
-.pictures{
-  margin-top: 10rem;
-  text-align: center;
-}
-.myPic {
-
-  border-radius: 20%;
-  width: 20rem;
-  height: 30rem;
-  margin-right: 1rem;
-}
-
-.information {
-margin-top: 15%;
-}
-
-/* Education */
-#education{
-  background-color:#cff6cf;
-  padding: 9rem 5rem;
-  /* margin: 0; */
-}
-.educationText{
-  padding-top: 10%;
-}
-.graduatePic{
-  margin-left: 15rem;
-  border-radius: 20%;
-  width: 20rem;
-  height: 30rem;
-}
-/* Skills */
+/* SKILLS */
 #skills{
-margin-bottom: 5rem;
-}
-.container {
-  margin-top: 2em;
-}
+  margin-bottom: 5rem;
+  padding:5rem 0;
+  }
+  .container {
+    margin-top: 2em;
+  }
+  
+  .title-skills {
+    font-size: 2em;
+    margin-top: 4em;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    transition: all 400ms ease-in-out;
+    margin: 4rem auto;
+    text-align: center;
+  }
+  
+  .bar {
+    width: 80%;
+    margin: 2em auto;
+  }
+  
+  .skill {
+    font-size: .8em;
+    text-transform: uppercase;
+    margin-bottom: 0.25em;
+  }
+  
+  .speech-bubble {
+    font-size: 0.75em;
+    line-height: 2em;
+    position: absolute;
+    top: -2.7em;
+    text-align: center;
+    min-width: 3em;
+    border-radius: 0.3em;
+    display: none;
+  }
+  
+  .react,
+  .jquery {
+    left: calc(70% - 1.5em);
+  }
+  .php {
+    left: calc(35% - 1.5em);
+  }
+  .swift {
+    left: calc(30% - 1.5em);
+  }
+  
+  .java{
+    left: calc(65% - 1.5em);
+  }
+  
+  .html,
+  .indesign {
+    left: calc(85% - 1.5em);
+  }
+  
+  .github{
+    left: calc(75% - 1.5em);
+  }
+  
+  .speech-bubble:after {
+    border: 0.5em solid transparent;
+    content: '';
+    margin-left: -0.5em;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+  }
+  
+  .bar-outer {
+    height: 1.25em;
+    background: #EEEEEE;
+    position: relative;
+    border-radius: 0.3em;
+  }
+  
+  .bar-inner {
+    width: 0;
+    height: 1.25em;
+    border-radius: 0.3em;
+  }
+  
+  .ht, .html {
+    background: #f6877c;
+  }
+  
+  .html:after {
+    border-top-color: #f6877c;
+  }
+  
+  .jq, .jquery {
+    background: #f9b3ac;
+  }
+  
+  .jquery:after {
+    border-top-color: #f9b3ac;
+  }
+  
+  .ja, .java {
+    background: #fbc9c4;
+  }
+  
+  .java:after {
+    border-top-color: #fbc9c4;
+  }
+  
+  .re, .react {
+    background: #f9b3ac;
+  }
+  
+  .react:after {
+    border-top-color: #f9b3ac;
+  }
+  
+  .ph, .php {
+    background: #fcd9d5;
+  }
+  
+  .php:after {
+    border-top-color: #fcd9d5;
+  }
+  
+  .sw, .swift {
+    background: #fde4e1;
+  }
+  
+  .swift:after {
+    border-top-color: #fde4e1;
+  }
+  
+  
+  .git, .github {
+    background: #f89d94;
+  }
+  
+  .github:after {
+    border-top-color: #f89d94;
+  }
 
-.title-skills {
-  font-size: 2em;
-  margin-top: 4em;
-  font-family: "Raleway", sans-serif;
-  text-transform:: uppercase;
-  letter-spacing: 10px;
-  transition: all 400ms ease-in-out;
-  margin: 4rem auto;
-  text-align: center;
-}
-
-.bar {
-  width: 80%;
-  margin: 2em auto;
-}
-
-.skill {
-  font-size: .8em;
-  text-transform: uppercase;
-  margin-bottom: 0.25em;
-}
-
-.speech-bubble {
-  font-size: 0.75em;
-  line-height: 2em;
-  position: absolute;
-  top: -2.7em;
-  text-align: center;
-  min-width: 3em;
-  border-radius: 0.3em;
-  display: none;
-}
-
-.react,
-.jquery {
-  left: calc(70% - 1.5em);
-}
-.php {
-  left: calc(35% - 1.5em);
-}
-.swift {
-  left: calc(30% - 1.5em);
-}
-
-.java{
-  left: calc(65% - 1.5em);
-}
-
-.html,
-.indesign {
-  left: calc(85% - 1.5em);
-}
-
-.github{
-  left: calc(75% - 1.5em);
-}
-
-.speech-bubble:after {
-  border: 0.5em solid transparent;
-  content: '';
-  margin-left: -0.5em;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-}
-
-.bar-outer {
-  height: 1.25em;
-  background: #EEEEEE;
-  position: relative;
-  border-radius: 0.3em;
-}
-
-.bar-inner {
-  width: 0;
-  height: 1.25em;
-  border-radius: 0.3em;
-}
-
-.ht, .html {
-  background: #fdeeed;
-}
-
-.html:after {
-  border-top-color: #fdeeed;
-}
-
-.jq, .jquery {
-  background: #fde4e1;
-}
-
-.jquery:after {
-  border-top-color: #fde4e1;
-}
-
-.ja, .java {
-  background: #fcd9d5;
-}
-
-.java:after {
-  border-top-color: #fcd9d5;
-}
-
-.re, .react {
-  background: #f9b3ac;
-}
-
-.react:after {
-  border-top-color: #f9b3ac;
-}
-
-.ph, .php {
-  background: #f89d94;
-}
-
-.php:after {
-  border-top-color: #f89d94;
-}
-
-.sw, .swift {
-  background: #fdc9c4;
-}
-
-.swift:after {
-  border-top-color: #fbc9c4;
-}
+  
 
 
-.git, .github {
-  background: #f6877c;
-}
-
-.github:after {
-  border-top-color: #f6877c;
-}
-
-
-/*Contact*/
-#contact{
-  /* height:25rem; */
-  color: #12cad6;
-  background-color:#cff6cf;
-  padding:3% 20%;
-  text-align: center;
-}
-#contact h2{
-  text-align: center;
-  /* padding-top: 1rem; */
-  margin-bottom: 0;
-  color: #12cad6;
-  font-family: 'Libre Baskerville', serif;
-}
-
-.fa {
-  padding: 15px;
-  font-size: 30px;
-  width: 60px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-linkedin {
-
-  background: #007bb5;
-  color: white;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-.footerText{
-  padding-left: 10rem;
-  padding-top: 2%;
-  font-size: 3rem;
-  font-family: 'Indie Flower', cursive;
-}
-.info{
-  color: #888888;
-}
-/*Footer*/
-#footer{
-  background-color:white;
-  text-align: center;
-  padding: 0 20rem;
-
+@media only screen and (max-device-width: 1600px) {
+  .homeImg, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
 }

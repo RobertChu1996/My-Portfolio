@@ -1,299 +1,267 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>YU KUANG CHU - A Web Developer</title>
-
-  <!-- Css Style -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YU KUANG CHU - Portfolio</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/styles.css">
-
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat+Alternates:ital,wght@1,500&family=Ubuntu&display=swap" rel="stylesheet">
-
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/f5b111ad75.js" crossorigin="anonymous"></script>
-  <!-- bootstrap Scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-<!-- JS,Jquery -->
+  <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script type="text/javascript" src="mail.js">
 
-  </script>
 </head>
 
 <body>
-  <!-- Title Page -->
-  <section id="title">
-    <div class="container-fluid">
 
 
-      <div class="titleName">
-
-
-        <h1>YU KUANG CHU</h1>
-        <div class="scrolling">
-          <h2>A Web Developer.</h2>
+  <!-- NavBar -->
+  <div class="w3-top">
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+          onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button"><b>Robert</b></a>
+        <div class="w3-right">
+          <a href="#home" class="w3-bar-item w3-button w3-hide-small">HOME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT Me</a>
+          <a href="#education" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-university"></i>
+            EDUCATION</a>
+          <a href="#skills" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-thumbs-up"></i>SKILLS</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT ME!</a>
         </div>
 
 
       </div>
 
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT Me</a>
+        <a href="#education" class="w3-bar-item w3-button" onclick="toggleFunction()">EDUCATION</a>
+        <a href="#skills" class="w3-bar-item w3-button" onclick="toggleFunction()">SKILLS</a>
+        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT ME!</a>
+      </div>
     </div>
+  </div>
 
+
+  <!-- Home Page -->
+
+  <section>
+    <div class="homeImg w3-display-container " id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">YU KUANG CHU
+      </div>
+    </div>
   </section>
 
-
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href=""><img src="images/piggy.png" width="100rem" height="100rem" alt="Piggy">Robert</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#aboutMe">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact Me!</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-<!-- About ME -->
-  <section id="aboutMe">
-
-
-    <div class="row">
-      <div class=" pictures col-md-6">
-        <img class="myPic" src="images/Robert.jpeg" alt="Robert">
-      </div>
-
-
-      <div class="information col-md-6">
-        <h2>About Me!</h3>
-          <p>
-            My name is <strong>YU KUANG CHU</strong> from Taiwan and my English name is Robert!<br>
-            Currently looking for jobs in the US that related to my major.<br>
-            Bachelor's degree in Computer Science,have some experience with several programming language, such as C, C++, Java, PHP, Swift and Pascal.
-            However my favorite one is Web Development, hope I can bacome a Web developer in the future as my career.<br>
-            I like social and making new friends, so feel free to contact me and be my friends!
-
-            <!-- Majoring in Computer Science studies in Winona State University.
-          Likes to take responsibility and really good on leadership. Enthusiastic technical professional with complete understanding of entire software development lifecycle. Highly trained in Java and Web development and known for having talents in
-          debugging and logic thinking. Always ready and willing to learn new stuff, and like self-learning to improve. -->
-          </p>
-      </div>
-
-
-
-    </div>
+  <!-- About Me -->
+  <section>
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">ABOUT ME</h3>
+      <p class="w3-center"><em>I love photography</em></p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;My name is <strong>YU KUANG CHU</strong> from Taiwan and my English name is
+        Robert.Bachelor's degree in
+        Computer Science,have some experience with several programming language, such as C,
+        C++, Java, PHP, Swift and Pascal.
+        However my favorite one is Web Development, hope I can bacome a Web developer in the future as my
+        career. <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;After so many years, I still remember the moment that I produced my first <em>"Hello
+          World"</em>
+        in the console of my first application. I know it's simple, but it aroused my interest in programming.
+        I remember my first programming language is Visual Basic, and I believe that's the moment I enter to
+        the world of programming.
+      </p>
+      <hr class="aboutHr">
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <p><b><i class="fa fa-user w3-margin-right"></i>YU KUANG CHU</b></p><br>
+          <img src="images/Robert.jpeg" class="myPic w3-round w3-image" alt="Photo of Me">
+        </div>
+        <div class="Info w3-col m6 w3-center w3-padding-large">
+          <h4 class="w3-center">My Hobbies</h3>
+            <ul class="hobbyList">
+              <li><i class="fas fa-laptop-code"></i> Coding</li>
+              <li><i class="fas fa-car-side"></i> Cars</li>
+              <li><i class="fas fa-wine-bottle"></i> Drink</li>
+              <li><i class="fas fa-users"></i> Socail & make new friends</li>
+              <li><i class="fas fa-plane-departure"></i> Travel</li>
+            </ul>
+            <p>Currently looking for jobs in the US that related to my major.<br>
+              <br>
+              I like social and making new friends, so feel free to contact me and be my friends! </p>
+        </div>
   </section>
+
+  <!-- First Parallax -->
+  <div class="firstParallax w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">EDUCATION</span>
+    </div>
+  </div>
 
   <!-- Education -->
 
+  <section>
+    <div class="w3-content w3-container w3-padding-64" id="education">
+      <div class="w3-row">
+        <div class="Info w3-col m6 w3-padding-large">
+          <h4 class="w3-center">Education</h4>
+          <p>Bachelor of Science: Computer Science
+            Winona State University - Winona, MN
+            <ul>
+              <li>Graduated with 3.01 GPA.</li>
+              <li>Relevant Coursework: Website Design, Web Page Programming, UI Design, Algorithms and complexity,
+                Computer system architecture, User Experience, Programming Languages
+              </li>
+              <li>President of Chinese Student Society Club.</li>
+            </ul>
 
-  <section id="education">
-  <div class="row">
-    <div class="educationText col-md-6">
-  <h2>Education</h2>
-  <p>Bachelor of Science: Computer Science
-Winona State University - Winona, MN
-•	Graduated with 3.01 GPA.
-•	Relevant Coursework: Website Design, Web Page Programming, UI Design, Algorithms and complexity, Computer system architecture, User Experience, Programming Languages
-•	President of Chinese Student Society Club.
-</p>
+          </p>
+
+        </div>
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <p><b><i class="fas fa-university"></i>Winona State University</b></p><br>
+          <img src="images/graduate.png" class="myPic w3-round w3-image" alt="Winona State University">
+
+        </div>
+      </div>
     </div>
-    <div class="col-md-6">
-      <img class="graduatePic" src="images/graduate.png" alt="Graduate">
+  </section>
+  <!-- Second Parallax -->
+  <div class="secondParallax w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">MY SKILLS</span>
     </div>
   </div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h1 class="title-skills">Programming Skills</h1>
+      <div class="bar">
+        <div class="skill">HTML & CSS</div>
+        <div class="bar-outer">
+          <div class="speech-bubble html">85%</div>
+          <div class="bar-inner ht"></div>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="skill">jQuery & Javascipt</div>
+        <div class="bar-outer">
+          <div class="speech-bubble jquery">70%</div>
+          <div class="bar-inner jq"></div>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="skill">Java</div>
+        <div class="bar-outer">
+          <div class="speech-bubble java">65%</div>
+          <div class="bar-inner ja"></div>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="skill">React.js</div>
+        <div class="bar-outer">
+          <div class="speech-bubble react">70%</div>
+          <div class="bar-inner re"></div>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="skill">PHP</div>
+        <div class="bar-outer">
+          <div class="speech-bubble php">35%</div>
+          <div class="bar-inner ph"></div>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="skill">Swift</div>
+        <div class="bar-outer">
+          <div class="speech-bubble swift">30%</div>
+          <div class="bar-inner sw"></div>
+        </div>
+      </div>
+
+
+      <div class="bar">
+        <div class="skill">Git/Github</div>
+        <div class="bar-outer">
+          <div class="speech-bubble github">75%</div>
+          <div class="bar-inner git"></div>
+        </div>
+      </div>
+    </div>
+    <script src="skills.js"></script>
   </section>
 
-<!-- Skills -->
-
-<section id="skills">
-  <div class="container">
-    <h1 class="title-skills">Technical Skills</h1>
-    <div class="bar">
-      <div class="skill">HTML & CSS</div>
-      <div class="bar-outer">
-        <div class="speech-bubble html">85%</div>
-        <div class="bar-inner ht"></div>
-      </div>
-    </div>
-    <div class="bar">
-      <div class="skill">jQuery & Javascipt</div>
-      <div class="bar-outer">
-        <div class="speech-bubble jquery">70%</div>
-        <div class="bar-inner jq"></div>
-      </div>
-    </div>
-    <div class="bar">
-      <div class="skill">Java</div>
-      <div class="bar-outer">
-        <div class="speech-bubble java">65%</div>
-        <div class="bar-inner ja"></div>
-      </div>
-    </div>
-    <div class="bar">
-      <div class="skill">React.js</div>
-      <div class="bar-outer">
-        <div class="speech-bubble react">70%</div>
-        <div class="bar-inner re"></div>
-      </div>
-    </div>
-    <div class="bar">
-      <div class="skill">PHP</div>
-      <div class="bar-outer">
-        <div class="speech-bubble php">35%</div>
-        <div class="bar-inner ph"></div>
-      </div>
-    </div>
-    <div class="bar">
-      <div class="skill">Swift</div>
-      <div class="bar-outer">
-        <div class="speech-bubble swift">30%</div>
-        <div class="bar-inner sw"></div>
-      </div>
-    </div>
-
-
-    <div class="bar">
-      <div class="skill">Git/Github</div>
-      <div class="bar-outer">
-        <div class="speech-bubble github">75%</div>
-        <div class="bar-inner git"></div>
-      </div>
+  <!-- Third Parallax -->
+  <div class="thirdParallax w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">Contact</span>
     </div>
   </div>
-  <script  src="skills.js"></script>
-</section>
 
   <!-- Contact -->
-  <!-- <section id="contact">
-    <h1>Contact me!</h1>
+  <section>
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+      <h3 class="w3-center">Contact Me</h3>
+      <p class="w3-center"><em>I'd love hear from you~!</em></p>
 
-    <div class="info">
-    <h3>YU KUANG CHU</h3>
-    <p >Email: roy403850133@gmail.com</p><nl>
-    <p>Phone: (507)-312-1935</p>
-    <a href="https://www.linkedin.com/in/yukuangchu/" class="fa fa-linkedin"></a>
-    <a href="https://www.instagram.com/robert_chu6651/" class="fa fa-instagram"></a>
-    </div>
-    </div>
-
-
-  </section> -->
-
-  <section id="contact" class="mb-4">
-
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h2>
-    <!-- <hr class="contactHr"> -->
-    <p class="text-center w-responsive mx-auto mb-5">Contact me if you have any question!</p>
-
-    <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form name="contact-form" action="https://formspree.io/mlepoeez" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="name form-control">
-                            <label for="name" class="">Your name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="email form-control">
-                            <label for="email" class="">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class=" subject form-control">
-                            <label for="subject" class="">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-md-12">
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="message form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            </form>
-
-            <div class="text-center text-md-left">
-                <a class="submit btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+          <img src="images/piggy.png" class="w3-image w3-round" style="width:100%">
+        </div>
+        <div class="w3-col m8 w3-panel">
+          <div class="w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Minnesota, US<br>
+            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 (507)-312-1935<br>
+            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: roy403850133@gmail.com<br>
+          </div>
+          <p>Come and be my friends <i class="fas fa-smile-beam"></i></p>
+          <form action="https://formspree.io/mlepoeez" method="POST" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
             </div>
-            <div class="status"></div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-right w3-section" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </form>
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>Winona, MN 55987, USA</p>
-                </li>
-
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 1 507 312 1935</p>
-                </li>
-
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>roy403850133@gmail.com</p>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
+      </div>
     </div>
-
-</section>
-  <!-- Footer -->
-  <section id="footer">
-
-    <p>
-      <i class="fas fa-copyright"></i> Copyright 2020 - YU KUANG CHU
-    </p>
-
   </section>
+
+  <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    
+    
+    <a href="https://www.linkedin.com/in/yukuangchu/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/robert_chu6651/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  </div>
+  <p>
+    <i class="fas fa-copyright"></i> Copyright 2020 - YU KUANG CHU
+  </p>
+</footer>
+
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
