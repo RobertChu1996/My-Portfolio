@@ -6,14 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>YU KUANG CHU - Portfolio</title>
   <!-- CSS -->
+  <!-- Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/aos.css">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/f5b111ad75.js" crossorigin="anonymous"></script>
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -85,7 +89,10 @@
       <div class="w3-row">
         <div class="w3-col m6 w3-center w3-padding-large">
           <p><b><i class="fa fa-user w3-margin-right"></i>YU KUANG CHU</b></p><br>
-          <img src="images/Robert.jpeg" class="myPic w3-round w3-image" alt="Photo of Me">
+          <div data-aos="fade-right">
+            <img src="images/Robert.jpeg" class="myPic w3-round w3-image" alt="Photo of Me">
+          </div>
+
         </div>
         <div class="Info w3-col m6 w3-center w3-padding-large">
           <h4 class="w3-center">My Hobbies</h3>
@@ -251,8 +258,8 @@
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    
-    
+
+
     <a href="https://www.linkedin.com/in/yukuangchu/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
     <a href="https://www.instagram.com/robert_chu6651/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
   </div>
@@ -261,6 +268,13 @@
   </p>
 </footer>
 
+
+
+<script type = "text/javascript">
+AOS.init({
+  duration: 2000
+});
+</script>
   <script type="text/javascript" src="script.js"></script>
 </body>
 
